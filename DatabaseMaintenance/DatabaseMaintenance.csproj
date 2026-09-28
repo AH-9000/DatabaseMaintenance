@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>FIREstatus.ico</ApplicationIcon>
+    <PackageIcon>FIREstatus-icon.jpeg</PackageIcon>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="FIREstatus.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\FIREstatus\FIREstatus-icon.jpeg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
